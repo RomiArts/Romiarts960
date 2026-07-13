@@ -79,7 +79,7 @@
         }
 
         header {
-            background-color: #f4bab0; 
+            background-color: #f4bab0;
             color: #ffffff;
             text-align: center;
             padding: 50px 20px;
@@ -419,7 +419,7 @@
     </header>
 
     <div class="container">
-        
+       
         <section id="about">
             <h2>自我介紹 (About Me)</h2>
             <p>（單純加好友請看這裡！）</p>
@@ -455,7 +455,7 @@
                     <ol>
                         <li><strong>諮詢討論：</strong>請附上詳細角色設定與風格需求，確認評估後給予報價。</li>
                         <li><strong>確認付款：</strong>請於指定時間內支付款項，確認收到款項後正式安排排單製作。</li>
-                        <li><strong>草稿階段修改：</strong>草稿階段可接受任何微調與修改。</li>
+                        <li><strong>草稿階段修改：</strong>草稿階段可接受 any 微調與修改。</li>
                         <li><strong>完稿大幅修改費：</strong>確認草稿並進入完稿階段後，大幅度修改（如姿勢、大改衣服配件）每次需加收 NT$ 50。微調顏色或小配件不在此限。</li>
                     </ol>
                 </div>
@@ -651,18 +651,16 @@
             e.stopPropagation();
             dropdown.classList.toggle('show');
         });
-
         document.addEventListener('click', () => {
             dropdown.classList.remove('show');
         });
-
         function toggleMenu() {
             dropdown.classList.remove('show');
         }
 
         // 輪播滑動控制 JS
         function moveSlider(event, direction) {
-            event.preventDefault(); 
+            event.preventDefault();
             const wrapper = event.target.closest('.slider-wrapper');
             const container = wrapper.querySelector('.slider-container');
             const scrollAmount = container.clientWidth;
