@@ -10,23 +10,20 @@
         }
         body {
             font-family: 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif;
-            background-color: #fdfbf7; /* 4300K 溫暖日光感底色 */
-            color: #3e3a36; /* 柔和深色字體 */
+            background-color: #fdfbf7; 
+            color: #3e3a36;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            scroll-behavior: smooth; /* 點擊選單時平滑滾動跳轉 */
+            scroll-behavior: smooth;
         }
         
-        /* 導覽列與漢堡選單總覽按鈕 */
         .nav-container {
             position: fixed;
             top: 20px;
             right: 20px;
             z-index: 1000;
         }
-        
-        /* 圖二的漢堡總覽按鈕 */
         .menu-toggle {
             background-color: #ffffff;
             border: 1px solid #f3ece0;
@@ -49,12 +46,9 @@
         .menu-toggle .bar {
             width: 22px;
             height: 3px;
-            background-color: #3e3a36; /* 三條線顏色 */
+            background-color: #3e3a36;
             border-radius: 2px;
-            transition: 0.3s;
         }
-        
-        /* 下拉總覽選單內容 */
         .menu-dropdown {
             position: absolute;
             top: 60px;
@@ -65,10 +59,10 @@
             box-shadow: 0 6px 15px rgba(0,0,0,0.1);
             padding: 10px 0;
             min-width: 160px;
-            display: none; /* 預設隱藏 */
+            display: none;
         }
         .menu-dropdown.show {
-            display: block; /* 點擊後顯示 */
+            display: block;
         }
         .menu-dropdown a {
             display: block;
@@ -84,13 +78,11 @@
             color: #d18d82;
         }
 
-        /* 標頭改為 Romiの委託工坊 */
         header {
-            background-color: #f4bab0; /* 專屬代表色 */
+            background-color: #f4bab0; 
             color: #ffffff;
             text-align: center;
             padding: 50px 20px;
-            position: relative;
         }
         header h1 {
             margin: 0;
@@ -125,8 +117,52 @@
             margin-bottom: 20px;
             font-size: 20px;
         }
+
+        .intro-link-card {
+            display: flex;
+            align-items: center;
+            background-color: #faf6f0;
+            border: 1px solid #f3ece0;
+            border-radius: 12px;
+            padding: 16px;
+            text-decoration: none;
+            color: #3e3a36;
+            transition: all 0.2s ease;
+            margin-top: 15px;
+        }
+        .intro-link-card:hover {
+            border-color: #f4bab0;
+            background-color: #fff0ed;
+            transform: translateY(-2px);
+        }
+        .intro-text {
+            flex: 1;
+            padding-right: 15px;
+        }
+        .intro-text h3 {
+            margin: 0 0 6px 0;
+            font-size: 16px;
+            color: #5a544d;
+        }
+        .intro-text p {
+            margin: 0 0 8px 0;
+            font-size: 13px;
+            color: #7a7269;
+        }
+        .intro-url {
+            font-size: 12px;
+            color: #d18d82;
+            font-weight: bold;
+            word-break: break-all;
+        }
+        .intro-img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #e8e1d7;
+        }
         
-        /* 注意事項的摺疊樣式 */
         .terms-details {
             background-color: #faf6f0;
             border: 1px solid #f3ece0;
@@ -143,7 +179,6 @@
             color: #5a544d;
             cursor: pointer;
             outline: none;
-            user-select: none;
         }
         .terms-details .details-content {
             padding-top: 12px;
@@ -151,7 +186,6 @@
             margin-top: 8px;
         }
         
-        /* 圖片卡片網格系統 */
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
@@ -226,23 +260,80 @@
             border: 1px solid #f4bab0;
         }
         
+        .schedule-box {
+            background-color: #f5efe6;
+            border: 1px solid #e8e1d7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #5a544d;
+        }
+        .schedule-btn {
+            display: inline-block;
+            background-color: #4a3e3d;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: all 0.2s ease;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .schedule-btn:hover {
+            background-color: #5c4e4d;
+            transform: translateY(-1px);
+        }
+
         ul, ol { padding-left: 20px; margin: 0; }
         li { margin-bottom: 6px; }
         .danger-box { background-color: #fff0ed; border-color: #f4bab0; }
         .danger-title { color: #d18d82; }
         
-        .contact-btn {
-            display: inline-block;
-            background-color: #f4bab0;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 30px;
-            font-weight: bold;
-            margin-top: 15px;
-            text-align: center;
+        /* 社群按鈕網格樣式 */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 20px;
         }
-        .contact-btn:hover { background-color: #e5a79d; }
+        @media (max-width: 480px) {
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            color: #ffffff;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .social-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        .btn-twitter { background-color: #1da1f2; }
+        .btn-instagram { background-color: #e1306c; }
+        .btn-threads { background-color: #000000; }
+        .btn-facebook { background-color: #1877f2; }
+        .btn-email {
+            grid-column: span 2;
+            background-color: #4a3e3d;
+        }
+        @media (max-width: 480px) {
+            .btn-email { grid-column: span 1; }
+        }
+
         .footer {
             text-align: center;
             padding: 30px 20px;
@@ -255,7 +346,6 @@
 </head>
 <body>
 
-    <!-- 右上角固定總覽選單按鈕 -->
     <div class="nav-container">
         <button class="menu-toggle" id="menuToggle" aria-label="開啟選單">
             <div class="bar"></div>
@@ -263,19 +353,34 @@
             <div class="bar"></div>
         </button>
         <div class="menu-dropdown" id="menuDropdown">
+            <a href="#about" onclick="toggleMenu()">👤 自我介紹</a>
             <a href="#terms" onclick="toggleMenu()">📌 注意事項</a>
             <a href="#pricing" onclick="toggleMenu()">💰 各類價目</a>
+            <a href="#schedule" onclick="toggleMenu()">📋 排單狀態</a>
             <a href="#contact" onclick="toggleMenu()">📬 聯絡工坊</a>
         </div>
     </div>
 
-    <!-- 標頭更新：Romiの委託工坊 -->
     <header>
         <h1>Romiの委託工坊</h1>
         <p>插畫製作 / 角色設計 / 委託首頁</p>
     </header>
 
     <div class="container">
+        
+        <!-- 自我介紹區塊 -->
+        <section id="about">
+            <h2>👤 自我介紹 (About Me)</h2>
+            <p>（單純加好友請看這裡！）</p>
+            <a href="https://lit.link/zh-tw/Romi0519" target="_blank" class="intro-link-card">
+                <div class="intro-text">
+                    <h3>糯米 lit.link</h3>
+                    <p>插畫家、一個小小插畫家。主要在 Instagram、One link 活動...</p>
+                    <span class="intro-url">🔗 https://lit.link/zh-tw/Romi0519</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Romi" class="intro-img">
+            </a>
+        </section>
         
         <!-- 委託須知 -->
         <section id="terms">
@@ -316,19 +421,54 @@
             </details>
         </section>
 
-        <!-- 價目表 -->
+        <!-- 各類價目表 -->
         <section id="pricing" style="background-color: transparent; border: none; padding: 0; box-shadow: none;">
             <h2>💰 各類價目表 (Pricing)</h2>
             <p style="color: #6b655f;">點擊下方任一項目卡片，即可展開查看詳細規格說明與規格限制！</p>
             
             <div class="pricing-grid">
                 
-                <!-- 卡片 1 -->
                 <details class="commission-card">
                     <summary>
-                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&auto=format&fit=crop" alt="正比半身橫插" class="card-preview-img">
+                        <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600" alt="正比大頭" class="card-preview-img">
                         <div class="card-header-bar">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&auto=format&fit=crop" alt="avatar" class="card-avatar">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar" class="card-avatar">
+                            <div class="card-title-text">✨ 正比大頭</div>
+                        </div>
+                    </summary>
+                    <div class="card-expanded-content">
+                        <div class="card-price-tag">價格：NT$ 800</div>
+                        <p><strong>項目說明：</strong></p>
+                        <ul>
+                            <li>可修改、可指定動作、可指定表情。</li>
+                            <li>交付精細完稿頭像檔案。</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="commission-card">
+                    <summary>
+                        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de215f?w=600" alt="純色背景QQ人" class="card-preview-img">
+                        <div class="card-header-bar">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar" class="card-avatar">
+                            <div class="card-title-text">🧸 純色背景 QQ人</div>
+                        </div>
+                    </summary>
+                    <div class="card-expanded-content">
+                        <div class="card-price-tag">價格：NT$ 600</div>
+                        <p><strong>項目說明：</strong></p>
+                        <ul>
+                            <li>可修改、可指定動作、可指定表情。</li>
+                            <li>超可愛 Q 版比例，搭配簡約質感的純色背景。</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <details class="commission-card">
+                    <summary>
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600" alt="正比半身橫插" class="card-preview-img">
+                        <div class="card-header-bar">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar" class="card-avatar">
                             <div class="card-title-text">正比半身橫插 \ 全身豎插</div>
                         </div>
                     </summary>
@@ -342,12 +482,11 @@
                     </div>
                 </details>
 
-                <!-- 卡片 2 -->
                 <details class="commission-card">
                     <summary>
-                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600&auto=format&fit=crop" alt="人物立繪/人物設計" class="card-preview-img">
+                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600" alt="人物立繪/人物設計" class="card-preview-img">
                         <div class="card-header-bar">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&auto=format&fit=crop" alt="avatar" class="card-avatar">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar" class="card-avatar">
                             <div class="card-title-text">人物立繪 / 人物設計</div>
                         </div>
                     </summary>
@@ -363,18 +502,50 @@
             </div>
         </section>
 
-        <!-- 聯絡方式 -->
-        <section id="contact">
-            <h2>📬 聯絡方式與表單 (Contact)</h2>
-            <p>如果您閱讀完須知並對價目滿意，歡迎透過以下管道與我聯絡！請隨信附上您的稱呼、委託項目、角色設定圖、用途與期望交件日期。</p>
-            
-            <ul>
-                <li><strong>主要聯絡 Email：</strong>romi.dmjhuanyong0925@gmail.com</li>
-                <li><strong>社群平台 (X / Instagram)：</strong>@Romi_enoaka</li>
-            </ul>
-            
+        <!-- 排單狀態區塊 -->
+        <section id="schedule">
+            <h2>📋 排單狀態 💾</h2>
+            <div class="schedule-box">
+                （按照上面排單顯示的順序為主）
+            </div>
+            <p style="text-align: center; margin: 15px 0 5px 0; font-weight: bold;">點擊下方連結查看排單！</p>
             <div style="text-align: center;">
-                <a href="#" class="contact-btn">前往填寫委託 Google 表單 ➡️</a>
+                <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRy90eLedUewmFvbNWsxrz6tpV5i2QYmZIkHWiqjL1sFWMyjzGGJyakQNiUUBHmBPfffZRqW-5DrA1z/pubhtml" target="_blank" class="schedule-btn">
+                     🟩 委託排單表 (Google Sheets)
+                </a>
+            </div>
+        </section>
+
+        <!-- 聯絡方式與社群跳轉按鈕 -->
+        <section id="contact">
+            <h2>📬 聯絡方式與社群 (Contact)</h2>
+            <p>如果您閱讀完須知並對價目滿意，歡迎點擊下方按鈕透過 Email 或各大社群平台與我聯絡！請隨信附上您的稱呼、委託項目、角色設定圖、用途與期望交件日期。</p>
+            
+            <div class="social-grid">
+                <!-- Twitter 按鈕 -->
+                <a href="https://x.com/romi_arts?s=11" target="_blank" class="social-btn btn-twitter">
+                    🐦 Twitter (X)
+                </a>
+                
+                <!-- Instagram 按鈕 -->
+                <a href="https://www.instagram.com/romi_enoaka?igsh=enNjb3BxN2ZieGZ2&utm_source=qr" target="_blank" class="social-btn btn-instagram">
+                    📸 Instagram
+                </a>
+                
+                <!-- Threads 按鈕 -->
+                <a href="https://www.threads.com/@romi_enoaka?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="social-btn btn-threads">
+                    💬 Threads
+                </a>
+                
+                <!-- Facebook 按鈕 -->
+                <a href="https://www.facebook.com/share/198u94kZyx/?mibextid=wwXIfr" target="_blank" class="social-btn btn-facebook">
+                    👥 Facebook
+                </a>
+                
+                <!-- Email 按鈕 (點擊會自動喚起寄信軟體) -->
+                <a href="mailto:romi.dmjhuanyong0925@gmail.com" class="social-btn btn-email">
+                    ✉️ 寄信聯絡：romi.dmjhuanyong0925@gmail.com
+                </a>
             </div>
         </section>
 
@@ -384,7 +555,6 @@
         © 2026 Romiの委託工坊. All Rights Reserved. Powered by GitHub Pages.
     </div>
 
-    <!-- 控制總覽選單展開/收起的簡單指令 -->
     <script>
         const toggleBtn = document.getElementById('menuToggle');
         const dropdown = document.getElementById('menuDropdown');
@@ -394,7 +564,6 @@
             dropdown.classList.toggle('show');
         });
 
-        // 點擊網頁其他地方時，自動收起選單
         document.addEventListener('click', () => {
             dropdown.classList.remove('show');
         });
