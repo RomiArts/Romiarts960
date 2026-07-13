@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romiの委託工坊</title>
+    <title>Romi Force 工坊</title>
     <style>
         *, *::before, *::after {
             box-sizing: border-box;
@@ -225,16 +225,7 @@
             padding: 16px;
             display: flex;
             align-items: center;
-            gap: 12px;
             background-color: #4a3e3d;
-        }
-        .card-avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 1.5px solid #ffffff;
-            background-color: #f4bab0;
         }
         .card-title-text {
             color: #ffffff;
@@ -260,7 +251,6 @@
             border: 1px solid #f4bab0;
         }
 
-        /* 👑 滑動相簿輪播系統庫 👑 */
         .slider-wrapper {
             position: relative;
             margin: 15px 0;
@@ -415,69 +405,67 @@
             <div class="bar"></div>
         </button>
         <div class="menu-dropdown" id="menuDropdown">
-            <a href="#about" onclick="toggleMenu()">👤 自我介紹</a>
-            <a href="#terms" onclick="toggleMenu()">📌 注意事項</a>
-            <a href="#pricing" onclick="toggleMenu()">💰 各類價目</a>
-            <a href="#schedule" onclick="toggleMenu()">📋 排單狀態</a>
-            <a href="#contact" onclick="toggleMenu()">📬 聯絡工坊</a>
+            <a href="#about" onclick="toggleMenu()">自我介紹</a>
+            <a href="#terms" onclick="toggleMenu()">注意事項</a>
+            <a href="#pricing" onclick="toggleMenu()">各類價目</a>
+            <a href="#schedule" onclick="toggleMenu()">排單狀態</a>
+            <a href="#contact" onclick="toggleMenu()">聯絡工坊</a>
         </div>
     </div>
 
     <header>
-        <h1>Romiの委託工坊</h1>
+        <h1>Romi Force 工坊</h1>
         <p>插畫製作 / 角色設計 / 委託首頁</p>
     </header>
 
     <div class="container">
         
-        <!-- 自我介紹區塊 -->
         <section id="about">
-            <h2>👤 自我介紹 (About Me)</h2>
+            <h2>自我介紹 (About Me)</h2>
             <p>（單純加好友請看這裡！）</p>
             <a href="https://lit.link/zh-tw/Romi0519" target="_blank" class="intro-link-card">
                 <div class="intro-text">
                     <h3>糯米 lit.link</h3>
                     <p>插畫家、一個小小插畫家。主要在 Instagram、One link 活動...</p>
-                    <span class="intro-url">🔗 https://lit.link/zh-tw/Romi0519</span>
+                    <span class="intro-url">https://lit.link/zh-tw/Romi0519</span>
                 </div>
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Romi" class="intro-img">
+                <img src="avatar1.jpg" alt="Romi" class="intro-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150'">
             </a>
         </section>
         
-        <!-- 委託注意事項區塊 -->
         <section id="terms">
-            <h2>📌 委託注意事項 (Terms of Service)</h2>
+            <h2>注意事項 (Terms of Service)</h2>
             <p style="margin-bottom: 20px;">感謝您的關注！在提出委託前，請點擊下方區塊展開並詳細閱讀須知內容。</p>
             
             <details class="terms-details">
-                <summary>📝 1. 基礎規範與報價調整 (點擊展開)</summary>
+                <summary>1. 基礎規範與報價調整 (點擊展開)</summary>
                 <div class="details-content">
                     <ul>
                         <li><strong>非商業授權：</strong>本委託預設為「個人非商業用途」（如社群頭像、桌布、個人收藏、非營利推廣）。商用請另行告知。</li>
                         <li><strong>著作權歸屬：</strong>作品著作權仍歸繪師所有，繪師有權收錄於個人作品集並加上防盜水印。</li>
                         <li><strong>複雜度加價：</strong>將依據人設與服裝複雜度視情況調整價格。若無完整服設或使用遊戲截圖，因難以判斷，亦會調整價格。</li>
-                        <li><strong>加急稿件：</strong>加急需主動告知，稿件總價將以 <strong>1.5 倍</strong> 計算。</li>
+                        <li><strong>加急稿件：</strong>加急需主動告知，稿件總價將以 1.5 倍 計算。</li>
                     </ul>
                 </div>
             </details>
 
             <details class="terms-details">
-                <summary>⏳ 2. 委託流程與修改機制 (點擊展開)</summary>
+                <summary>2. 委託流程與修改機制 (點擊展開)</summary>
                 <div class="details-content">
                     <ol>
                         <li><strong>諮詢討論：</strong>請附上詳細角色設定與風格需求，確認評估後給予報價。</li>
                         <li><strong>確認付款：</strong>請於指定時間內支付款項，確認收到款項後正式安排排單製作。</li>
                         <li><strong>草稿階段修改：</strong>草稿階段可接受任何微調與修改。</li>
-                        <li><strong>完稿大幅修改費：</strong>確認草稿並進入完稿階段後，<strong>大幅度修改（如姿勢、大改衣服配件）每次需加收 NT$ 50</strong>。微調顏色或小配件不在此限。</li>
+                        <li><strong>完稿大幅修改費：</strong>確認草稿並進入完稿階段後，大幅度修改（如姿勢、大改衣服配件）每次需加收 NT$ 50。微調顏色或小配件不在此限。</li>
                     </ol>
                 </div>
             </details>
 
             <details class="terms-details danger-box">
-                <summary class="danger-title">❌ 3. 委託限制與退款機制 (點擊展開)</summary>
+                <summary class="danger-title">3. 委託限制與退款機制 (點擊展開)</summary>
                 <div class="details-content">
                     <ul>
-                        <li><strong>不擅長項目：</strong>本人<strong>不擅長繪製男性角色</strong>（如欲委託請三思，有翻車風險）。</li>
+                        <li><strong>不擅長項目：</strong>本人不擅長繪製男性角色（如欲委託請三思，有翻車風險）。</li>
                         <li><strong>不接項目：</strong>不接急單（未溝通加急者）、純文字通靈設定、爭議性作品、過度血腥或未成年 R-18 內容。</li>
                         <li><strong>退款機制：</strong>繪師方主動取消將全額退款；草稿前由委託方取消退 50%；草稿開始製作後恕不接受退款。</li>
                     </ul>
@@ -485,35 +473,31 @@
             </details>
         </section>
 
-        <!-- 各類價目表區塊 -->
         <section id="pricing" style="background-color: transparent; border: none; padding: 0; box-shadow: none;">
-            <h2>💰 各類價目表 (Pricing)</h2>
+            <h2>各類價目表 (Pricing)</h2>
             <p style="color: #6b655f;">點擊下方任一項目卡片，即可展開查看詳細規格說明與範例圖集！</p>
             
             <div class="pricing-grid">
                 
-                <!-- 1. 正比大頭 -->
                 <details class="commission-card">
                     <summary>
-                        <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600" alt="正比大頭" class="card-preview-img">
+                        <img src="avatar1.jpg" alt="正比大頭" class="card-preview-img" onerror="this.src='https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600'">
                         <div class="card-header-bar">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar" class="card-avatar">
-                            <div class="card-title-text">✨ 正比大頭</div>
+                            <div class="card-title-text">正比大頭</div>
                         </div>
                     </summary>
                     <div class="card-expanded-content">
                         <div class="card-price-tag">價格：NT$ 800</div>
                         
-                        <p><strong>🎨 範例圖集 (左右滑動或點選箭頭瀏覽)：</strong></p>
-                        <!-- 滑動輪播區 -->
+                        <p><strong>範例圖集 (左右滑動或點選箭頭瀏覽)：</strong></p>
                         <div class="slider-wrapper">
                             <button class="slider-arrow arrow-left" onclick="moveSlider(event, -1)">❮</button>
                             <div class="slider-container">
-                                <div class="slider-item"><img src="avatar1.png" alt="範例1" onerror="this.src='https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600'"></div>
-                                <div class="slider-item"><img src="avatar2.png" alt="範例2" onerror="this.src='https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=600'"></div>
-                                <div class="slider-item"><img src="avatar3.png" alt="範例3" onerror="this.src='https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=600'"></div>
-                                <div class="slider-item"><img src="avatar4.png" alt="範例4" onerror="this.src='https://images.unsplash.com/photo-1579783928621-7a1c342ea42e?w=600'"></div>
-                                <div class="slider-item"><img src="avatar5.png" alt="範例5" onerror="this.src='https://images.unsplash.com/photo-1594744803329-e58b31de215f?w=600'"></div>
+                                <div class="slider-item"><img src="avatar1.jpg" alt="範例1" onerror="this.src='https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600'"></div>
+                                <div class="slider-item"><img src="avatar2.jpg" alt="範例2" onerror="this.src='https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=600'"></div>
+                                <div class="slider-item"><img src="avatar3.jpg" alt="範例3" onerror="this.src='https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=600'"></div>
+                                <div class="slider-item"><img src="avatar4.jpg" alt="範例4" onerror="this.src='https://images.unsplash.com/photo-1579783928621-7a1c342ea42e?w=600'"></div>
+                                <div class="slider-item"><img src="avatar5.jpg" alt="範例5" onerror="this.src='https://images.unsplash.com/photo-1594744803329-e58b31de215f?w=600'"></div>
                             </div>
                             <button class="slider-arrow arrow-right" onclick="moveSlider(event, 1)">❯</button>
                         </div>
@@ -521,33 +505,31 @@
                         <p><strong>項目說明：</strong></p>
                         <ul>
                             <li><strong>背景設定：</strong>預設為「簡單背景」（如有其他特殊需求請主動提醒）。</li>
-                            <li><strong>畫布大小：</strong>規格統一固定為 <strong>3000 × 3000 像素</strong>（若需要更改請事先告知）。</li>
+                            <li><strong>畫布大小：</strong>規格統一固定為 3000 × 3000 像素。</li>
                             <li><strong>客製範圍：</strong>可指定動作、指定表情與氛圍。</li>
                         </ul>
                     </div>
                 </details>
 
-                <!-- 2. 純色背景 QQ人 -->
                 <details class="commission-card">
                     <summary>
-                        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de215f?w=600" alt="純色背景QQ人" class="card-preview-img">
+                        <img src="chibi1.jpg" alt="純色背景QQ人" class="card-preview-img" onerror="this.src='https://images.unsplash.com/photo-1594744803329-e58b31de215f?w=600'">
                         <div class="card-header-bar">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar" class="card-avatar">
-                            <div class="card-title-text">🧸 純色背景 QQ人</div>
+                            <div class="card-title-text">純色背景 QQ人</div>
                         </div>
                     </summary>
                     <div class="card-expanded-content">
                         <div class="card-price-tag">價格：NT$ 600</div>
                         
-                        <p><strong>🎨 範例圖集 (左右滑動或點選箭頭瀏覽)：</strong></p>
+                        <p><strong>範例圖集 (左右滑動或點選箭頭瀏覽)：</strong></p>
                         <div class="slider-wrapper">
                             <button class="slider-arrow arrow-left" onclick="moveSlider(event, -1)">❮</button>
                             <div class="slider-container">
-                                <div class="slider-item"><img src="chibi1.png" alt="範例1" onerror="this.src='https://images.unsplash.com/photo-1594744803329-e58b31de215f?w=600'"></div>
-                                <div class="slider-item"><img src="chibi2.png" alt="範例2" onerror="this.src='https://images.unsplash.com/photo-1579783928621-7a1c342ea42e?w=600'"></div>
-                                <div class="slider-item"><img src="chibi3.png" alt="範例3" onerror="this.src='https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=600'"></div>
-                                <div class="slider-item"><img src="chibi4.png" alt="範例4" onerror="this.src='https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=600'"></div>
-                                <div class="slider-item"><img src="chibi5.png" alt="範例5" onerror="this.src='https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600'"></div>
+                                <div class="slider-item"><img src="chibi1.jpg" alt="範例1" onerror="this.src='https://images.unsplash.com/photo-1594744803329-e58b31de215f?w=600'"></div>
+                                <div class="slider-item"><img src="chibi2.jpg" alt="範例2" onerror="this.src='https://images.unsplash.com/photo-1579783928621-7a1c342ea42e?w=600'"></div>
+                                <div class="slider-item"><img src="chibi3.jpg" alt="範例3" onerror="this.src='https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=600'"></div>
+                                <div class="slider-item"><img src="chibi4.jpg" alt="範例4" onerror="this.src='https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=600'"></div>
+                                <div class="slider-item"><img src="chibi5.jpg" alt="範例5" onerror="this.src='https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600'"></div>
                             </div>
                             <button class="slider-arrow arrow-right" onclick="moveSlider(event, 1)">❯</button>
                         </div>
@@ -555,33 +537,31 @@
                         <p><strong>項目說明：</strong></p>
                         <ul>
                             <li><strong>背景設定：</strong>預設為「無背景/透明底」（若需要添加純色背景請主動提醒）。</li>
-                            <li><strong>畫布大小：</strong>規格統一固定為 <strong>2000 × 2000 像素</strong>（若需要更改請事先告知）。</li>
+                            <li><strong>畫布大小：</strong>規格統一固定為 2000 × 2000 像素。</li>
                             <li><strong>客製範圍：</strong>可指定動作、指定表情，展現可愛Q版比例。</li>
                         </ul>
                     </div>
                 </details>
                 
-                <!-- 3. 正比半身橫插 -->
                 <details class="commission-card">
                     <summary>
-                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600" alt="正比半身橫插" class="card-preview-img">
+                        <img src="half1.jpg" alt="正比半身橫插" class="card-preview-img" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600'">
                         <div class="card-header-bar">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar" class="card-avatar">
-                            <div class="card-title-text">📐 正比半身橫插</div>
+                            <div class="card-title-text">正比半身橫插</div>
                         </div>
                     </summary>
                     <div class="card-expanded-content">
                         <div class="card-price-tag">價格：NT$ 3,500 ~ 5,000+</div>
                         
-                        <p><strong>🎨 範例圖集 (左右滑動或點選箭頭瀏覽)：</strong></p>
+                        <p><strong>範例圖集 (左右滑動或點選箭頭瀏覽)：</strong></p>
                         <div class="slider-wrapper">
                             <button class="slider-arrow arrow-left" onclick="moveSlider(event, -1)">❮</button>
                             <div class="slider-container">
-                                <div class="slider-item"><img src="half1.png" alt="範例1" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600'"></div>
-                                <div class="slider-item"><img src="half2.png" alt="範例2" onerror="this.src='https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600'"></div>
-                                <div class="slider-item"><img src="half3.png" alt="範例3" onerror="this.src='https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600'"></div>
-                                <div class="slider-item"><img src="half4.png" alt="範例4" onerror="this.src='https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=600'"></div>
-                                <div class="slider-item"><img src="half5.png" alt="範例5" onerror="this.src='https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=600'"></div>
+                                <div class="slider-item"><img src="half1.jpg" alt="範例1" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600'"></div>
+                                <div class="slider-item"><img src="half2.jpg" alt="範例2" onerror="this.src='https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600'"></div>
+                                <div class="slider-item"><img src="half3.jpg" alt="範例3" onerror="this.src='https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600'"></div>
+                                <div class="slider-item"><img src="half4.jpg" alt="範例4" onerror="this.src='https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=600'"></div>
+                                <div class="slider-item"><img src="half5.jpg" alt="範例5" onerror="this.src='https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=600'"></div>
                             </div>
                             <button class="slider-arrow arrow-right" onclick="moveSlider(event, 1)">❯</button>
                         </div>
@@ -589,44 +569,40 @@
                         <p><strong>項目說明：</strong></p>
                         <ul>
                             <li><strong>背景與構圖：</strong>大腿以上半身橫插圖，含單色或簡單幾何背景配置。</li>
-                            <li><strong>畫布大小：</strong>規格統一固定為 <strong>標準 A4 大小</strong>（若需要更改請事先告知）。</li>
+                            <li><strong>畫布大小：</strong>規格統一固定為 標準 A4 大小。</li>
                             <li>價格會依據角色設定與服裝複雜度視情況調整。</li>
                         </ul>
                     </div>
                 </details>
 
-                <!-- 4. 人物立繪 / 人物設計 -->
                 <details class="commission-card">
                     <summary>
-                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600" alt="人物立繪/人物設計" class="card-preview-img">
+                        <img src="full1.jpg" alt="人物立繪/人物設計" class="card-preview-img" onerror="this.src='https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600'">
                         <div class="card-header-bar">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50" alt="avatar" class="card-avatar">
-                            <div class="card-title-text">👗 人物立繪 / 人物設計</div>
+                            <div class="card-title-text">人物立繪 / 人物設計</div>
                         </div>
                     </summary>
                     <div class="card-expanded-content">
                         <div class="card-price-tag">價格：NT$ 5,000 ~ 8,000+</div>
                         
-                        <p><strong>🎨 範例圖集 (左右滑動或點選箭頭瀏覽)：</strong></p>
+                        <p><strong>範例圖集 (左右滑動或點選箭頭瀏覽)：</strong></p>
                         <div class="slider-wrapper">
                             <button class="slider-arrow arrow-left" onclick="moveSlider(event, -1)">❮</button>
                             <div class="slider-container">
-                                <div class="slider-item"><img src="full1.png" alt="範例1" onerror="this.src='https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600'"></div>
-                                <div class="slider-item"><img src="full2.png" alt="範例2" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600'"></div>
-                                <div class="slider-item"><img src="full3.png" alt="範例3" onerror="this.src='https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=600'"></div>
-                                <div class="slider-item"><img src="full4.png" alt="範例4" onerror="this.src='https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=600'"></div>
-                                <div class="slider-item"><img src="full5.png" alt="範例5" onerror="this.src='https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600'"></div>
+                                <div class="slider-item"><img src="full1.jpg" alt="範例1" onerror="this.src='https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600'"></div>
+                                <div class="slider-item"><img src="full2.jpg" alt="範例2" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600'"></div>
+                                <div class="slider-item"><img src="full3.jpg" alt="範例3" onerror="this.src='https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=600'"></div>
+                                <div class="slider-item"><img src="full4.jpg" alt="範例4" onerror="this.src='https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=600'"></div>
+                                <div class="slider-item"><img src="full5.jpg" alt="範例5" onerror="this.src='https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600'"></div>
                             </div>
                             <button class="slider-arrow arrow-right" onclick="moveSlider(event, 1)">❯</button>
                         </div>
 
                         <p><strong>項目說明：</strong></p>
                         <ul>
-                            <li><strong>背景設定：</strong>默認為「無背景/去背透明底」PNG 檔案（如有背景需求請提前提醒）。</li>
-                            <li><strong>畫布大小：</strong>由繪師依設計精細度自訂（如有特殊要求或更改請事先告知）。</li>
-                            <li><strong>豐富配套：</strong>包含完整角色全身立繪，並配套 <strong>2 個表情差分、服裝細節設定、專屬色票</strong>。</li>
+                            <li><strong>背景設定：</strong>默認為「無背景/去背透明底」PNG 檔案。</li>
+                            <li><strong>豐富配套：</strong>包含完整角色全身立繪，並配套 2 個表情差分、服裝細節設定、專屬色票。</li>
                             <li><strong>客製範圍：</strong>可指定動作、表情或服飾設計。接受草稿階段的任何修改。</li>
-                            <li><strong>從零設計：</strong>可完全承接從0開始的原創角色設計，但請務必提供相關範例圖片作為風格與方向參考。</li>
                         </ul>
                     </div>
                 </details>
@@ -634,57 +610,36 @@
             </div>
         </section>
 
-        <!-- 排單狀態區塊 -->
         <section id="schedule">
-            <h2>📋 排單狀態 💾</h2>
+            <h2>排單狀態</h2>
             <div class="schedule-box">
                 （按照上面排單顯示的順序為主）
             </div>
             <p style="text-align: center; margin: 15px 0 5px 0; font-weight: bold;">點擊下方連結查看排單！</p>
             <div style="text-align: center;">
                 <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRy90eLedUewmFvbNWsxrz6tpV5i2QYmZIkHWiqjL1sFWMyjzGGJyakQNiUUBHmBPfffZRqW-5DrA1z/pubhtml" target="_blank" class="schedule-btn">
-                     🟩 委託排單表 (Google Sheets)
+                     委託排單表 (Google Sheets)
                 </a>
             </div>
         </section>
 
-        <!-- 聯絡方式與社群跳轉按鈕 -->
         <section id="contact">
-            <h2>📬 聯絡方式與社群 (Contact)</h2>
+            <h2>聯絡方式與社群 (Contact)</h2>
             <p>如果您閱讀完須知並對價目滿意，歡迎點擊下方按鈕透過 Email 或各大社群平台與我聯絡！請隨信附上您的稱呼、委託項目、角色設定圖、用途與期望交件日期。</p>
             
             <div class="social-grid">
-                <!-- Twitter 按鈕 -->
-                <a href="https://x.com/romi_arts?s=11" target="_blank" class="social-btn btn-twitter">
-                    🐦 Twitter (X)
-                </a>
-                
-                <!-- Instagram 按鈕 -->
-                <a href="https://www.instagram.com/romi_enoaka?igsh=enNjb3BxN2ZieGZ2&utm_source=qr" target="_blank" class="social-btn btn-instagram">
-                    📸 Instagram
-                </a>
-                
-                <!-- Threads 按鈕 -->
-                <a href="https://www.threads.com/@romi_enoaka?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="social-btn btn-threads">
-                    💬 Threads
-                </a>
-                
-                <!-- Facebook 按鈕 -->
-                <a href="https://www.facebook.com/share/198u94kZyx/?mibextid=wwXIfr" target="_blank" class="social-btn btn-facebook">
-                    👥 Facebook
-                </a>
-                
-                <!-- Email 按鈕 -->
-                <a href="mailto:romi.dmjhuanyong0925@gmail.com" class="social-btn btn-email">
-                    ✉️ 寄信聯絡：romi.dmjhuanyong0925@gmail.com
-                </a>
+                <a href="https://x.com/romi_arts?s=11" target="_blank" class="social-btn btn-twitter">Twitter (X)</a>
+                <a href="https://www.instagram.com/romi_enoaka?igsh=enNjb3BxN2ZieGZ2&utm_source=qr" target="_blank" class="social-btn btn-instagram">Instagram</a>
+                <a href="https://www.threads.com/@romi_enoaka?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="social-btn btn-threads">Threads</a>
+                <a href="https://www.facebook.com/share/198u94kZyx/?mibextid=wwXIfr" target="_blank" class="social-btn btn-facebook">Facebook</a>
+                <a href="mailto:romi.dmjhuanyong0925@gmail.com" class="social-btn btn-email">寄信聯絡：romi.dmjhuanyong0925@gmail.com</a>
             </div>
         </section>
 
     </div>
 
     <div class="footer">
-        © 2026 Romiの委託工坊. All Rights Reserved. Powered by GitHub Pages.
+        © 2026 Romi Force 工坊. All Rights Reserved. Powered by GitHub Pages.
     </div>
 
     <script>
@@ -705,9 +660,9 @@
             dropdown.classList.remove('show');
         }
 
-        // 👑 輪播滑動控制 JS 👑
+        // 輪播滑動控制 JS
         function moveSlider(event, direction) {
-            event.preventDefault(); // 防止點擊箭頭時收合 details 卡片
+            event.preventDefault(); 
             const wrapper = event.target.closest('.slider-wrapper');
             const container = wrapper.querySelector('.slider-container');
             const scrollAmount = container.clientWidth;
